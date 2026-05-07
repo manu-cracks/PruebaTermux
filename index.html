@@ -1,0 +1,11 @@
+<!-- Botón simple para iniciar el pago -->
+<button id="payButton">Pagar con Flow (Sandbox)</button>
+
+<script>
+document.getElementById('payButton').addEventListener('click', async () => {
+    // Aquí llamarías a tu servidor para obtener la URL de Flow
+    // Por simplicidad, simularemos la redirección tras recibir url+token [8]
+    const flowUrl = "LA_URL_RECIBIDA_DEL_BACKEND";
+    window.location.href = flowUrl;
+});
+</script>
